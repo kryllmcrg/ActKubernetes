@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-kubernetes-karylle  # change this
+  name: k8s-kubernetes-karylle  # Updated to all lowercase
   labels:
     app: nginx
 spec:
@@ -34,7 +34,7 @@ spec:
           command:
             - "sh"
             - "-c"
-            - "curl -o /usr/share/nginx/html/index.html https://raw.githubusercontent.com/kryllmcrg/ActKubernetes/main/index.html"  # change this
+            - "curl -o /usr/share/nginx/html/index.html https://raw.githubusercontent.com/kryllmcrg/ActKubernetes/main/index.html"
           volumeMounts:
             - name: html-volume
               mountPath: /usr/share/nginx/html
