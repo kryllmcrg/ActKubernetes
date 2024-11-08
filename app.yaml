@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-kubernetes-karylle  # Updated to all lowercase
+  name: k8s-kubernetes-karylle  # Ensure this is all lowercase
   labels:
     app: nginx
 spec:
